@@ -13,6 +13,7 @@ module.exports = {
     filename: 'bundle.min.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/my-cloud-vue/',
   },
   devtool: isProduction ? 'hidden-source-map' : 'inline-source-map',
   devServer: {
