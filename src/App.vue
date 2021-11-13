@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    Hello Vue!
-  </div>
+  <div id="app">Hello Vue!</div>
 </template>
 
 <script>
-export default {
-  name: "App"
-}
+  export default {
+    name: 'App',
+  };
 </script>
