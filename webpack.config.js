@@ -49,5 +49,6 @@ module.exports = {
       inject: 'body',
     }),
     new ESLintWebpackPlugin(),
+    new MiniCssExtractPlugin(),
   ],
 };
