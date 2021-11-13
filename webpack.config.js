@@ -2,6 +2,7 @@ const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -47,5 +48,6 @@ module.exports = {
       filename: path.resolve(__dirname, 'dist', 'index.html'),
       inject: 'body',
     }),
+    new ESLintWebpackPlugin(),
   ],
 };
