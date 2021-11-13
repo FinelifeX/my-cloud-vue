@@ -34,6 +34,7 @@ module.exports = {
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'vue-style-loader',
           'css-loader',
+          'postcss-loader',
           'sass-loader',
         ],
       },
