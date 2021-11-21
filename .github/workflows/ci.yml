@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          token: ${{ serets.DEPLOY_TOKEN }}
+          token: ${{ secrets.DEPLOY_TOKEN }}
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
