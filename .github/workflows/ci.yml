@@ -27,26 +27,29 @@ jobs:
         uses: actions/setup-node@v2.4.1
         with:
           node-version: 16.x
+      
+      - name: Install yarn
+        run: npm i -g yarn
           
       - name: Clone repository
-      - run: git clone "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" --branch main
+        run: git clone "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" --branch main
       
       - name: Navigate to project directory
-      - run: cd ./${GITHUB_REPOSITORY#*/}
+        run: cd ./${GITHUB_REPOSITORY#*/}
       
       - name: Install dependencies
-      - run: yarn
+        run: yarn
       
       - name: Build app
-      - run: yarn build
+        run: yarn build
       
       - name: Navigate to build directory
-      - run: cd ./dist
+        run: cd ./dist
       
       - name: Initialize git repository in the build folder
-      - run: git init \
+        run: git init \
           git config user.name "Bulat Murtazin" \
           git config user.email "bulatf.murtazin@gmail.com"
       
       - name: Push to gh-pages branch
-      - run: git push "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" origin main
+        run: git push "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" origin main
