@@ -47,7 +47,7 @@ jobs:
         working-directory: ./dist
         
       - name: Set push URL
-        run: git remote set-url gh-pages "https://${{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}"
+        run: git remote set-url origin "https://${{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}"
         
       - name: Check git status
         run: git status
