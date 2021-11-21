@@ -43,13 +43,12 @@ jobs:
       - name: Build app
         run: yarn build
       
-      - name: Navigate to build directory
-        run: cd ./dist
-      
       - name: Initialize git repository in the build folder
         run: git init && \
           git config user.name "Bulat Murtazin" && \
           git config user.email "bulatf.murtazin@gmail.com"
+        working-directory: ./dist
       
       - name: Push to gh-pages branch
         run: git push "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" origin main
+        working-directory: ./dist
