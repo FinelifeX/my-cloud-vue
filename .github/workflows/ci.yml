@@ -46,6 +46,9 @@ jobs:
         run: git init && git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" && git checkout -b origin/main && git config user.name "Bulat Murtazin" && git config user.email "bulatf.murtazin@gmail.com"
         working-directory: ./dist
         
+      - name: Set push URL
+      - run: git remote set-url gh-pages "https://${{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}"
+        
       - name: Check git status
         run: git status
         working-directory: ./dist
