@@ -47,8 +47,8 @@ jobs:
         run: cd ./dist
       
       - name: Initialize git repository in the build folder
-        run: git init \
-          git config user.name "Bulat Murtazin" \
+        run: git init && \
+          git config user.name "Bulat Murtazin" && \
           git config user.email "bulatf.murtazin@gmail.com"
       
       - name: Push to gh-pages branch
