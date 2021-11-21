@@ -22,6 +22,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          token: ${{ serets.DEPLOY_TOKEN }}
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
@@ -32,7 +34,7 @@ jobs:
         run: npm i -g yarn
           
       - name: Clone repository
-        run: git clone "https://${{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" --branch main
+        run: git clone "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" --branch main
       
       - name: Install dependencies
         run: yarn
