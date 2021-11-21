@@ -41,7 +41,7 @@ jobs:
         run: yarn build
       
       - name: Initialize git repository in the build folder
-        run: git init && git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" && git checkout -b origin/main && git config user.name "Bulat Murtazin" && git config user.email "bulatf.murtazin@gmail.com"
+        run: git init && git remote add origin "http://FinelifeX:{{ secrets.DEPLOY_TOKEN }}/${GITHUB_REPOSITORY}.git" && git checkout -b origin/main && git config user.name "Bulat Murtazin" && git config user.email "bulatf.murtazin@gmail.com"
         working-directory: ./dist
         
       - name: Check git status
