@@ -32,7 +32,7 @@ jobs:
         run: npm i -g yarn
           
       - name: Clone repository
-        run: git clone "https://FinelifeX:{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" --branch main
+        run: git clone "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" --branch main
       
       - name: Install dependencies
         run: yarn
@@ -49,5 +49,5 @@ jobs:
         working-directory: ./dist
       
       - name: Push to gh-pages branch
-        run: git add . && git commit -m "= deploy -> ${GITHUB_RUN_NUMBER}" && git push -f "https://FinelifeX:{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages
+        run: git add . && git commit -m "= deploy -> ${GITHUB_RUN_NUMBER}" && git push -f "https://{{ secrets.DEPLOY_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages
         working-directory: ./dist
