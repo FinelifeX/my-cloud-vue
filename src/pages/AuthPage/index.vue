@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <h1>Hello, Vue!</h1>
+  <main>
+    <h1>Auth Page</h1>
     <router-view></router-view>
-  </div>
+  </main>
 </template>
 
 <script>
   export default {
-    name: 'App',
+    name: 'AuthPage',
   };
 </script>
+
+<style scoped></style>
