@@ -11,7 +11,11 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   settings: {
-    'import/resolver': 'webpack',
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.config.js',
+      },
+    },
   },
   parserOptions: {
     ecmaVersion: 13,
