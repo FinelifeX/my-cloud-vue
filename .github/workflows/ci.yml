@@ -20,10 +20,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
           token: ${{ secrets.DEPLOY_TOKEN }}
+          ref: main
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
@@ -32,27 +33,15 @@ jobs:
       
       - name: Install yarn
         run: npm i -g yarn
-          
-      - name: Clone repository
-        run: git clone "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" --branch main
       
       - name: Install dependencies
         run: yarn
       
       - name: Build app
         run: yarn build
-      
-      - name: Initialize git repository in the build folder
-        run: git init && git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" && git checkout -b origin/main && git config user.name "Bulat Murtazin" && git config user.email "bulatf.murtazin@gmail.com"
-        working-directory: ./dist
-        
-      - name: Set push URL
-        run: git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}"
-        
-      - name: Check git status
-        run: git status
-        working-directory: ./dist
-      
-      - name: Push to gh-pages branch
-        run: git add . && git commit -m "= deploy -> ${GITHUB_RUN_NUMBER}" && git push -f origin HEAD:gh-pages
-        working-directory: ./dist
+
+      - name: Deploy build folder to GitHub pages
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: gh-pages
+          folder: dist
