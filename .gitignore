@@ -1,8 +1,0 @@
-# Modules
-node_modules/
-
-# Build artifacts
-dist/
-
-# JetBrains IDEs
-.idea/
