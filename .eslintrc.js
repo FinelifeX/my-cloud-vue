@@ -10,6 +10,9 @@ module.exports = {
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
   ],
+  settings: {
+    'import/resolver': 'webpack',
+  },
   parserOptions: {
     ecmaVersion: 13,
     sourceType: 'module',
