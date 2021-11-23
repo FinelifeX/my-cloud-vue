@@ -116,6 +116,132 @@
 
 /* purgecss end ignore */
 /* purgecss start ignore */
+.main__header__display-mode-select[data-v-1f102bb6]{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 231, 255, var(--tw-border-opacity));
+  border-radius: 1.5rem;
+  padding: 0.125rem
+}
+.main__header__display-mode-select__item[data-v-1f102bb6]{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms
+}
+.main__header__display-mode-select__item--active[data-v-1f102bb6]{
+  --tw-bg-opacity: 1;
+  background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(79, 70, 229, var(--tw-text-opacity))
+}
+.main__header__display-mode-select__item input[data-v-1f102bb6]{
+  visibility: hidden;
+  position: absolute
+}
+.main__header__display-mode-select__item__text[data-v-1f102bb6]{
+  margin-left: 0.5rem
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
+.main__header__search-container[data-v-68729e28]{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  --tw-text-opacity:1;
+  color:rgba(171, 168, 178, var(--tw-text-opacity));
+  position:relative
+}
+.main__header__search__icon[data-v-68729e28]{
+  position:absolute;
+  top:0.5rem;
+  left:0px;
+  transition-property:background-color, border-color, color, fill, stroke;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+  transition-duration:200ms
+}
+.main__header__search[data-v-68729e28]{
+  background-color:transparent;
+  outline:2px solid transparent;
+  outline-offset:2px;
+  padding:0.5rem;
+  padding-bottom:0px;
+  padding-left:2.5rem;
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+  transition-duration:200ms
+}
+.main__header__search[data-v-68729e28]:focus{
+  border-bottom-width:1px;
+  --tw-border-opacity:1;
+  border-color:rgba(79, 70, 229, var(--tw-border-opacity));
+  padding-bottom:0.5rem
+}
+.main__header__search:focus+.main__header__search__icon[data-v-68729e28]{
+  --tw-text-opacity:1;
+  color:rgba(79, 70, 229, var(--tw-text-opacity))
+}
+.main__header__search[data-v-68729e28]::-webkit-search-cancel-button{
+  -webkit-appearance:none
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
+.main__header__avatar[data-v-552ac85b]{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(79, 70, 229, var(--tw-border-opacity));
+  border-radius: 9999px;
+  padding: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(79, 70, 229, var(--tw-text-opacity))
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
+.main__header[data-v-0235f9b4]{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem
+}
+.main__header_left[data-v-0235f9b4]{
+  display: flex;
+  flex: 1 1 0%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem
+}
+.main__header__avatar[data-v-0235f9b4]{
+  margin-left: 1rem
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
 .main[data-v-6b07fd79]{
   flex: 5 5 0%;
   margin: 1.25rem;
@@ -382,6 +508,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
 
 /**
 Remove the inner padding in Chrome and Safari on macOS.
@@ -665,12 +796,28 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .flex {
   display: flex;
 }
 
 .table {
   display: table;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 @keyframes spin {
@@ -712,6 +859,39 @@ video {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -722,6 +902,10 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 *, ::before, ::after {
@@ -735,6 +919,12 @@ video {
   --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-colors {
