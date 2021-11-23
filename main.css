@@ -55,14 +55,14 @@
 
 /* purgecss end ignore */
 /* purgecss start ignore */
-.sidebar__body[data-v-6199cd13]{
+.sidebar__body[data-v-86c3d89a]{
   flex: 1 1 0%;
   padding-top: 2rem
 }
-.sidebar__nav__item[data-v-6199cd13]:not(:first-child){
+.sidebar__nav__item[data-v-86c3d89a]:not(:first-child){
   margin-top: 0.75rem
 }
-.sidebar__nav__item[data-v-6199cd13]:not(:last-child){
+.sidebar__nav__item[data-v-86c3d89a]:not(:last-child){
   margin-bottom: 0.75rem
 }
 
@@ -158,7 +158,7 @@
 
 /* purgecss end ignore */
 /* purgecss start ignore */
-.main__header__search-container[data-v-68729e28]{
+.main__header__search-container[data-v-9a7949f8]{
   display:flex;
   flex-direction:row;
   align-items:center;
@@ -166,7 +166,7 @@
   color:rgba(171, 168, 178, var(--tw-text-opacity));
   position:relative
 }
-.main__header__search__icon[data-v-68729e28]{
+.main__header__search__icon[data-v-9a7949f8]{
   position:absolute;
   top:0.5rem;
   left:0px;
@@ -175,7 +175,7 @@
   transition-duration:150ms;
   transition-duration:200ms
 }
-.main__header__search[data-v-68729e28]{
+.main__header__search[data-v-9a7949f8]{
   background-color:transparent;
   outline:2px solid transparent;
   outline-offset:2px;
@@ -187,23 +187,23 @@
   transition-duration:150ms;
   transition-duration:200ms
 }
-.main__header__search[data-v-68729e28]:focus{
+.main__header__search[data-v-9a7949f8]:focus{
   border-bottom-width:1px;
   --tw-border-opacity:1;
   border-color:rgba(79, 70, 229, var(--tw-border-opacity));
   padding-bottom:0.5rem
 }
-.main__header__search:focus+.main__header__search__icon[data-v-68729e28]{
+.main__header__search:focus+.main__header__search__icon[data-v-9a7949f8]{
   --tw-text-opacity:1;
   color:rgba(79, 70, 229, var(--tw-text-opacity))
 }
-.main__header__search[data-v-68729e28]::-webkit-search-cancel-button{
+.main__header__search[data-v-9a7949f8]::-webkit-search-cancel-button{
   -webkit-appearance:none
 }
 
 /* purgecss end ignore */
 /* purgecss start ignore */
-.main__header__avatar[data-v-552ac85b]{
+.main__header__avatar[data-v-f74da07a]{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -221,14 +221,14 @@
 
 /* purgecss end ignore */
 /* purgecss start ignore */
-.main__header[data-v-0235f9b4]{
+.main__header[data-v-25320868]{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem
 }
-.main__header_left[data-v-0235f9b4]{
+.main__header_left[data-v-25320868]{
   display: flex;
   flex: 1 1 0%;
   flex-wrap: wrap;
@@ -236,7 +236,7 @@
   justify-content: space-between;
   gap: 1rem
 }
-.main__header__avatar[data-v-0235f9b4]{
+.main__header__avatar[data-v-25320868]{
   margin-left: 1rem
 }
 
