@@ -1,7 +1,6 @@
 /*
-  Route enums
-  "path" for nested routes should be specified without the leading slash
-*/
+  Nested paths should be written without the leading slash
+ */
 
 const Auth = {
   Default: {
