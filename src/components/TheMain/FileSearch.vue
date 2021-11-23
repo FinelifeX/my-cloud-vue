@@ -6,7 +6,7 @@
       placeholder="Search for file..."
     />
     <div class="main__header__search__icon">
-      <search-outlined />
+      <search-outlined :size="22" />
     </div>
   </div>
 </template>

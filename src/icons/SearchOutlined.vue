@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="-2.5 -2.5 24 24"
-    width="24"
+    :width="size"
     fill="currentColor"
   >
     <path
@@ -14,6 +14,12 @@
 <script>
   export default {
     name: 'SearchOutlined',
+    props: {
+      size: {
+        type: Number,
+        default: 24,
+      },
+    },
   };
 </script>
 
