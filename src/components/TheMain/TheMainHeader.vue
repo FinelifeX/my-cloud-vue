@@ -4,7 +4,7 @@
       <file-search />
       <display-mode-select />
     </div>
-    <div class="main__header__avatar">Avatar</div>
+    <the-avatar />
   </header>
 </template>
 
@@ -12,10 +12,11 @@
   import SearchOutlined from '@icons/SearchOutlined';
   import DisplayModeSelect from './DisplayModeSelect.vue';
   import FileSearch from './FileSearch.vue';
+  import TheAvatar from './TheAvatar.vue';
 
   export default {
     name: 'TheMainHeader',
-    components: { FileSearch, DisplayModeSelect },
+    components: { TheAvatar, FileSearch, DisplayModeSelect },
     data() {
       return {
         searchIcon: SearchOutlined,
