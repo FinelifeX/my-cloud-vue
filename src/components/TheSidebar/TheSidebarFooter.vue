@@ -11,7 +11,7 @@
 
 <script>
   import CogOutlined from '@icons/CogOutlined';
-  import InfoOutlined from '@icons/InfoOutlined';
+  import HelpOutlined from '@icons/HelpOutlined';
   import SidebarButton from './SidebarButton.vue';
 
   export default {
@@ -20,7 +20,7 @@
     data() {
       return {
         settingsIcon: CogOutlined,
-        aboutIcon: InfoOutlined,
+        aboutIcon: HelpOutlined,
       };
     },
     methods: {
