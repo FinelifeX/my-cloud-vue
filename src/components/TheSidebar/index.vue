@@ -1,9 +1,11 @@
 <template>
-  <section>
-    <the-sidebar-header />
-    <the-sidebar-body />
+  <aside class="sidebar">
+    <div class="sidebar__top">
+      <the-sidebar-header />
+      <the-sidebar-body />
+    </div>
     <the-sidebar-footer />
-  </section>
+  </aside>
 </template>
 
 <script>
@@ -17,4 +19,10 @@
   };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+  .sidebar {
+    @apply h-full;
+    @apply p-5;
+    @apply flex flex-col justify-between;
+  }
+</style>

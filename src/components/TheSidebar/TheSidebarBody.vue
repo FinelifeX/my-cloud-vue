@@ -1,12 +1,12 @@
 <template>
-  <section>
+  <nav>
     <ul>
       <li>All files</li>
       <li>Images</li>
       <li>Videos</li>
       <li>Other files</li>
     </ul>
-  </section>
+  </nav>
 </template>
 
 <script>
