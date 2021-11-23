@@ -17,7 +17,7 @@
 
 <style scoped lang="scss">
   .main {
-    @apply flex-1;
+    @apply flex-5;
     @apply m-5;
     @apply p-5;
     @apply rounded-3xl;
