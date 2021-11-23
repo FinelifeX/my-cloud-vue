@@ -1,11 +1,12 @@
 <template>
-  <div class="display-mode-select">
+  <div class="main__header__display-mode-select">
     <label
       v-for="item in displayTypes"
       :key="item.value"
       :class="{
-        'display-mode-select__item': true,
-        'display-mode-select__item--active': displayType === item.value,
+        'main__header__display-mode-select__item': true,
+        'main__header__display-mode-select__item--active':
+          displayType === item.value,
       }"
     >
       <input
@@ -15,7 +16,9 @@
         @input="onSelect"
       />
       <component :is="item.icon" :size="14"></component>
-      <span class="display-mode-select__item__text">{{ item.text }}</span>
+      <span class="main__header__display-mode-select__item__text">{{
+        item.text
+      }}</span>
     </label>
   </div>
 </template>
@@ -52,14 +55,14 @@
 </script>
 
 <style scoped>
-  .display-mode-select {
+  .main__header__display-mode-select {
     @apply flex flex-row items-center;
     @apply border border-indigo-100;
     @apply rounded-3xl;
     @apply p-0.5;
   }
 
-  .display-mode-select__item {
+  .main__header__display-mode-select__item {
     @apply relative;
     @apply flex flex-row items-center;
     @apply rounded-3xl;
@@ -78,7 +81,7 @@
     }
   }
 
-  .display-mode-select__item__text {
+  .main__header__display-mode-select__item__text {
     @apply ml-2;
   }
 </style>
