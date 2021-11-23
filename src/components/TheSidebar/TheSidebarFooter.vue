@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import CogOutlined from '@icons/CogOutlined';
-  import HelpOutlined from '@icons/HelpOutlined';
+  import CogOutlined from '@icons/CogOutlined.vue';
+  import HelpOutlined from '@icons/HelpOutlined.vue';
   import SidebarButton from './SidebarButton.vue';
 
   export default {

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import SearchOutlined from '@icons/SearchOutlined';
+  import SearchOutlined from '@icons/SearchOutlined.vue';
   import DisplayModeSelect from './DisplayModeSelect.vue';
   import FileSearch from './FileSearch.vue';
   import TheAvatar from './TheAvatar.vue';

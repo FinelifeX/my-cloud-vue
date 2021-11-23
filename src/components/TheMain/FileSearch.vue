@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import SearchOutlined from '@icons/SearchOutlined';
+  import SearchOutlined from '@icons/SearchOutlined.vue';
 
   export default {
     name: 'FileSearch',
