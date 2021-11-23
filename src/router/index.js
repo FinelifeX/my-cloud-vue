@@ -3,24 +3,39 @@ import MainPage from '@pages/MainPage.vue';
 import AuthPage from '@pages/AuthPage/index.vue';
 import LoginPage from '@pages/AuthPage/LoginPage.vue';
 import SignUpPage from '@pages/AuthPage/SignUpPage.vue';
+import Routes from './routes';
+
+const { Auth, File } = Routes;
 
 const router = new VueRouter({
   routes: [
     {
-      path: '/',
+      ...File.Home,
       component: MainPage,
     },
     {
-      path: '/auth',
+      ...File.Images,
+      component: MainPage,
+    },
+    {
+      ...File.Videos,
+      component: MainPage,
+    },
+    {
+      ...File.All,
+      component: MainPage,
+    },
+    {
+      ...Auth.Default,
       redirect: '/auth/login',
       component: AuthPage,
       children: [
         {
-          path: 'login',
+          ...Auth.Login,
           component: LoginPage,
         },
         {
-          path: 'sign-up',
+          ...Auth.SignUp,
           component: SignUpPage,
         },
       ],

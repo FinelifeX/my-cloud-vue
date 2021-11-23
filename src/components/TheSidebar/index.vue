@@ -22,7 +22,15 @@
 <style scoped lang="scss">
   .sidebar {
     @apply h-full;
+    @apply flex-1;
     @apply p-5;
     @apply flex flex-col justify-between;
+
+    min-width: 14rem;
+  }
+
+  .sidebar__top {
+    @apply flex-1;
+    @apply flex flex-col;
   }
 </style>

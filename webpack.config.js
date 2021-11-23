@@ -49,6 +49,8 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src', 'pages'),
       '@assets': path.resolve(__dirname, 'src', 'assets'),
       '@shared': path.resolve(__dirname, 'src', 'shared'),
+      '@icons': path.resolve(__dirname, 'src', 'icons'),
+      '@router': path.resolve(__dirname, 'src', 'router'),
     },
   },
   plugins: [

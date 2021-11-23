@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import TheMainHeader from '@components/TheMain/TheMainHeader';
-  import TheMainContent from '@components/TheMain/TheMainContent';
+  import TheMainHeader from './TheMainHeader.vue';
+  import TheMainContent from './TheMainContent.vue';
 
   export default {
     name: 'TheMain',
@@ -17,7 +17,7 @@
 
 <style scoped lang="scss">
   .main {
-    @apply flex-1;
+    @apply flex-5;
     @apply m-5;
     @apply p-5;
     @apply rounded-3xl;
