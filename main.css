@@ -1,3 +1,34 @@
+/* purgecss start ignore */
+.sidebar[data-v-577e6b8a]{
+  height: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
+.main[data-v-32c8aa37]{
+  flex: 1 1 0%;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(244, 246, 253, var(--tw-bg-opacity))
+}
+
+/* purgecss end ignore */
+/* purgecss start ignore */
+.main-page[data-v-5bedebbc]{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden
+}
+
+/* purgecss end ignore */
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -526,6 +557,10 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
@@ -561,6 +596,14 @@ video {
   }
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 *, ::before, ::after {
   --tw-shadow: 0 0 #0000;
 }
@@ -572,6 +615,10 @@ video {
   --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
+}
+
+body{
+  background-color:#fff
 }
 
 @media (min-width: 640px) {
