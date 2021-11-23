@@ -11,17 +11,23 @@
           <component :is="searchIcon"></component>
         </div>
       </div>
-      <div class="main__header__display-mode">Display Mode Select</div>
+      <div class="main__header__display-mode">
+        <display-mode-select />
+      </div>
     </div>
     <div class="main__header__avatar">Avatar</div>
   </header>
 </template>
 
 <script>
-  import SearchOutlined from '@icons/SearchOutlined.vue';
+  import SearchOutlined from '@icons/SearchOutlined';
+  import GridOutlined from '@icons/GridOutlined';
+  import ListOutlined from '@icons/ListOutlined';
+  import DisplayModeSelect from './DisplayModeSelect.vue';
 
   export default {
     name: 'TheMainHeader',
+    components: { DisplayModeSelect, ListOutlined, GridOutlined },
     data() {
       return {
         searchIcon: SearchOutlined,
@@ -33,10 +39,12 @@
 <style scoped lang="scss">
   .main__header {
     @apply flex flex-row justify-between items-center;
+    @apply mb-8;
   }
 
   .main__header_left {
     @apply flex justify-between items-center flex-1 flex-wrap;
+    @apply gap-4;
   }
 
   .main__header__search-container {
@@ -71,6 +79,10 @@
   }
 
   .main__header__display-mode {
-    @apply content-end;
+    @apply flex flex-row items-center;
+  }
+
+  .main__header__avatar {
+    @apply ml-4;
   }
 </style>
