@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import TheMainHeader from '@components/TheMain/TheMainHeader';
-  import TheMainContent from '@components/TheMain/TheMainContent';
+  import TheMainHeader from './TheMainHeader.vue';
+  import TheMainContent from './TheMainContent.vue';
 
   export default {
     name: 'TheMain',
