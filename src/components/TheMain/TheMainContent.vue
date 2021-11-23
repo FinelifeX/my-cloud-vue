@@ -8,18 +8,22 @@
 <script>
   import Routes from '@router/routes';
 
+  const {
+    File: { Home, Images, Videos, All },
+  } = Routes;
+
   export default {
     name: 'TheMainContent',
     computed: {
       displayedData() {
         switch (this.$route.name) {
-          case Routes.File.Home:
+          case Home.name:
             return 'Home';
-          case Routes.File.Images:
+          case Images.name:
             return 'Images';
-          case Routes.File.Videos:
+          case Videos.name:
             return 'Videos';
-          case Routes.File.All:
+          case All.name:
             return 'All files';
           default:
             return 'Unknown';
