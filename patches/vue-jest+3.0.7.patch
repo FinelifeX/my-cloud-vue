@@ -1,0 +1,10 @@
+diff --git a/node_modules/vue-jest/lib/compilers/babel-compiler.js b/node_modules/vue-jest/lib/compilers/babel-compiler.js
+index dc96ea0..9eb850b 100644
+--- a/node_modules/vue-jest/lib/compilers/babel-compiler.js
++++ b/node_modules/vue-jest/lib/compilers/babel-compiler.js
+@@ -1,4 +1,4 @@
+-const babel = require('babel-core')
++const babel = require('@babel/core')
+ const loadBabelConfig = require('../load-babel-config.js')
+ 
+ module.exports = function compileBabel (scriptContent, inputSourceMap, inlineConfig, vueJestConfig, filePath) {
