@@ -68,7 +68,7 @@
 
 /* purgecss end ignore */
 /* purgecss start ignore */
-.sidebar-button[data-v-6c1f8178]{
+.sidebar-button[data-v-962972e4]{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -85,15 +85,15 @@
   padding-left: 1rem;
   border-radius: 0.5rem
 }
-.sidebar-button[data-v-6c1f8178]:hover, .sidebar-button[data-v-6c1f8178]:target, .sidebar-button[data-v-6c1f8178]:focus{
+.sidebar-button[data-v-962972e4]:hover, .sidebar-button[data-v-962972e4]:target, .sidebar-button[data-v-962972e4]:focus{
   --tw-text-opacity: 1;
   color: rgba(79, 70, 229, var(--tw-text-opacity))
 }
-.sidebar-button[data-v-6c1f8178]:active{
+.sidebar-button[data-v-962972e4]:active{
   --tw-bg-opacity: 1;
   background-color: rgba(244, 246, 253, var(--tw-bg-opacity))
 }
-.sidebar-button__text[data-v-6c1f8178]{
+.sidebar-button__text[data-v-962972e4]{
   margin-left: 1.5rem
 }
 
