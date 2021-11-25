@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarButton component should render correctly 1`] = `
+"<button class=\\"sidebar-button\\">
+  <!----> <span class=\\"sidebar-button__text\\">button</span></button>"
+`;

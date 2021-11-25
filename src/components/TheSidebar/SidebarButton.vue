@@ -18,7 +18,6 @@
         default: null,
       },
     },
-    emits: ['click'],
   };
 </script>
 
