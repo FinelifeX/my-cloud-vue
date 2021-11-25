@@ -15,7 +15,7 @@ module.exports = {
     clean: true,
     publicPath: '/my-cloud-vue/',
   },
-  devtool: isProduction ? 'hidden-source-map' : 'inline-source-map',
+  devtool: isProduction ? undefined : 'inline-source-map',
   devServer: {
     static: './dist',
     hot: true,
