@@ -62,6 +62,6 @@ module.exports = {
       inject: 'body',
     }),
     new ESLintWebpackPlugin(),
-    new MiniCssExtractPlugin(),
-  ],
+    isProduction && new MiniCssExtractPlugin(),
+  ].filter(Boolean),
 };
