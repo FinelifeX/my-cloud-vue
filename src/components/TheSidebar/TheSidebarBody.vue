@@ -20,39 +20,39 @@
   import ImageOutlined from '@icons/ImageOutlined.vue';
   import CameraOutlined from '@icons/CameraOutlined.vue';
   import FilesOutlined from '@icons/FilesOutlined.vue';
-  import Routes from '@router/routes';
+  import { FileRoutesMeta } from '@router/fileRoutes';
   import SidebarNavLink from './SidebarNavLink.vue';
-
-  const { File } = Routes;
 
   export default {
     name: 'TheBody',
     components: { SidebarNavLink },
     data() {
+      const { All, Home, Images, Videos } = FileRoutesMeta;
+
       return {
         links: [
           {
-            key: File.Home.name,
-            path: File.Home.path,
+            key: Home.name,
+            path: Home.path,
             title: 'Home',
             icon: HomeOutlined,
             exact: true,
           },
           {
-            key: File.Images.name,
-            path: File.Images.path,
+            key: Images.name,
+            path: Images.path,
             title: 'Images',
             icon: ImageOutlined,
           },
           {
-            key: File.Videos.name,
-            path: File.Videos.path,
+            key: Videos.name,
+            path: Videos.path,
             title: 'Videos',
             icon: CameraOutlined,
           },
           {
-            key: File.All.name,
-            path: File.All.path,
+            key: All.name,
+            path: All.path,
             title: 'All files',
             icon: FilesOutlined,
           },
