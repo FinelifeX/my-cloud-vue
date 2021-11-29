@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue';
-import SidebarNavLink from './SidebarNavLink.vue';
+import SidebarNavLink from './index';
 
 describe('SidebarNavLink component', () => {
   it('should render correctly', () => {

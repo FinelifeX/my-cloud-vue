@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import AlienOutlined from '@icons/AlienOutlined.vue';
+  import AlienOutlined from '@icons/AlienOutlined';
 
   export default {
     name: 'TheAvatar',

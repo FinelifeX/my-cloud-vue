@@ -1,4 +1,4 @@
-import MainPage from '@pages/MainPage.vue';
+import MainPage from '@pages/MainPage';
 
 export const FileRoutesMeta = {
   Home: {

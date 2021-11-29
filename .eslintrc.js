@@ -25,5 +25,11 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     'prettier/prettier': 'error',
+    'import/extensions': [
+      'error',
+      {
+        vue: 'never',
+      },
+    ],
   },
 };

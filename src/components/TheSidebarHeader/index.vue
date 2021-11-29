@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import CloudOutlined from '@icons/CloudOutlined.vue';
+  import CloudOutlined from '@icons/CloudOutlined';
 
   export default {
     name: 'TheHeader',

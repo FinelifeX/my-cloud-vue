@@ -16,12 +16,12 @@
 </template>
 
 <script>
-  import HomeOutlined from '@icons/HomeOutlined.vue';
-  import ImageOutlined from '@icons/ImageOutlined.vue';
-  import CameraOutlined from '@icons/CameraOutlined.vue';
-  import FilesOutlined from '@icons/FilesOutlined.vue';
+  import HomeOutlined from '@icons/HomeOutlined';
+  import ImageOutlined from '@icons/ImageOutlined';
+  import CameraOutlined from '@icons/CameraOutlined';
+  import FilesOutlined from '@icons/FilesOutlined';
   import { FileRoutesMeta } from '@router/fileRoutes';
-  import SidebarNavLink from './SidebarNavLink.vue';
+  import SidebarNavLink from '../SidebarNavlink';
 
   export default {
     name: 'TheBody',

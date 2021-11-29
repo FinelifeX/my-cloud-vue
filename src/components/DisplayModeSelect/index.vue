@@ -24,8 +24,8 @@
 </template>
 
 <script>
-  import GridOutlined from '@icons/GridOutlined.vue';
-  import ListOutlined from '@icons/ListOutlined.vue';
+  import GridOutlined from '@icons/GridOutlined';
+  import ListOutlined from '@icons/ListOutlined';
   import FilesDisplayTypes from '@const/filesDisplayTypes';
 
   export default {
@@ -54,7 +54,7 @@
   };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .main__header__display-mode-select {
     @apply flex flex-row items-center;
     @apply border border-indigo-100;

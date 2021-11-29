@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue';
-import TheSidebar from './index.vue';
+import TheSidebar from './index';
 
 describe('TheSidebar component', () => {
   it('should render correctly', () => {

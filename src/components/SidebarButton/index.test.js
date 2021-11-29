@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue';
-import SidebarButton from './SidebarButton.vue';
+import SidebarButton from './index';
 
 describe('SidebarButton component', () => {
   it('should render correctly', () => {

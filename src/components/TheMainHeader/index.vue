@@ -9,10 +9,10 @@
 </template>
 
 <script>
-  import SearchOutlined from '@icons/SearchOutlined.vue';
-  import DisplayModeSelect from './DisplayModeSelect.vue';
-  import FileSearch from './FileSearch.vue';
-  import TheAvatar from './TheAvatar.vue';
+  import SearchOutlined from '@icons/SearchOutlined';
+  import DisplayModeSelect from '@components/DisplayModeSelect';
+  import FileSearch from '../FileSearch';
+  import TheAvatar from '../TheAvatar';
 
   export default {
     name: 'TheMainHeader',
