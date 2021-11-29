@@ -9,9 +9,9 @@
 </template>
 
 <script>
-  import TheSidebarHeader from './TheSidebarHeader.vue';
-  import TheSidebarBody from './TheSidebarBody.vue';
-  import TheSidebarFooter from './TheSidebarFooter.vue';
+  import TheSidebarHeader from '../TheSidebarHeader';
+  import TheSidebarBody from '../TheSidebarBody';
+  import TheSidebarFooter from '../TheSidebarFooter';
 
   export default {
     name: 'TheSidebar',

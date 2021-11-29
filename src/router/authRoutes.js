@@ -1,6 +1,6 @@
 import AuthPage from '@pages/AuthPage';
-import LoginPage from '@pages/AuthPage/LoginPage.vue';
-import SignUpPage from '@pages/AuthPage/SignUpPage.vue';
+import LoginPage from '@pages/AuthPage/LoginPage';
+import SignUpPage from '@pages/AuthPage/SignUpPage';
 
 export const AuthRoutesMeta = {
   Default: {

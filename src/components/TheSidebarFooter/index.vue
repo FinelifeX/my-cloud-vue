@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  import CogOutlined from '@icons/CogOutlined.vue';
-  import HelpOutlined from '@icons/HelpOutlined.vue';
-  import SidebarButton from './SidebarButton.vue';
+  import CogOutlined from '@icons/CogOutlined';
+  import HelpOutlined from '@icons/HelpOutlined';
+  import SidebarButton from '@components/SidebarButton';
 
   export default {
     name: 'TheSidebarFooter',

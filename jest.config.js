@@ -4,7 +4,7 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less)$': 'identity-obj-proxy',
     '^@components/(.*)$': '<rootDir>/src/components/$1',
-    '^@const/(.*)$': '<rootDir>/src/const/$1',
+    '^@const/(.*)$': '<rootDir>/src/constants/$1',
     '^@pages/(.*)$': '<rootDir>/src/pages/$1',
     '^@assets/(.*)$': '<rootDir>/src/assets/$1',
     '^@shared/(.*)$': '<rootDir>/src/shared/$1',
