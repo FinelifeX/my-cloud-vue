@@ -6,16 +6,14 @@
 </template>
 
 <script>
-  import Routes from '@router/routes';
-
-  const {
-    File: { Home, Images, Videos, All },
-  } = Routes;
+  import { FileRoutesMeta } from '@router/fileRoutes';
 
   export default {
     name: 'TheMainContent',
     computed: {
       displayedData() {
+        const { Home, All, Images, Videos } = FileRoutesMeta;
+
         switch (this.$route.name) {
           case Home.name:
             return 'Home';
