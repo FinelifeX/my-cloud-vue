@@ -17,7 +17,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../../assets/style/fonts';
+  @import '~@assets/styles/fonts';
 
   .sidebar__header {
     @apply flex flex-row items-center;

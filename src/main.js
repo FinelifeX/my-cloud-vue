@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import router from './router';
 import App from './App';
 
-import './assets/style/app.scss';
+import '@assets/styles/app.scss';
 
 Vue.use(VueRouter);
 
