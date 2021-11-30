@@ -1,8 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
+const dotenv = require('dotenv');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintWebpackPlugin = require('eslint-webpack-plugin');
+
+dotenv.config({ path: './.env' });
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -52,6 +56,7 @@ module.exports = {
       '@shared': path.resolve(__dirname, 'src', 'shared'),
       '@icons': path.resolve(__dirname, 'src', 'icons'),
       '@router': path.resolve(__dirname, 'src', 'router'),
+      '@firebase': path.resolve(__dirname, 'src', 'firebase'),
     },
   },
   plugins: [
@@ -63,5 +68,8 @@ module.exports = {
     }),
     new ESLintWebpackPlugin(),
     isProduction && new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
+    }),
   ].filter(Boolean),
 };
