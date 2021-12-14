@@ -1,8 +1,5 @@
 <template>
-  <main>
-    <h1>Auth Page</h1>
-    <router-view></router-view>
-  </main>
+  <router-view></router-view>
 </template>
 
 <script>
